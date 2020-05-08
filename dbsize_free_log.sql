@@ -9,6 +9,3 @@ from master..sysdatabases d, master..sysusages u
 where u.dbid = d.dbid  and d.status != 256
 group by d.dbid
 order by db_name(d.dbid)
-go
-sp_spaceused 
-g
